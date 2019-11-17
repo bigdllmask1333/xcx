@@ -1,0 +1,24 @@
+--------------------------------------------------------------------------------------------------------------------
+-- ----------------------------
+-- 小程序大全
+-- ----------------------------
+DROP TABLE IF EXISTS `fa_applist`; 
+
+CREATE TABLE `fa_applist` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID',
+  `minititle` varchar(255) DEFAULT NULL COMMENT '小程序昵称',
+  `href` varchar(255) DEFAULT NULL COMMENT '详情地址',
+  `mini_image` varchar(255) DEFAULT NULL COMMENT '头像',
+  `title` varchar(20) DEFAULT NULL COMMENT '名称',
+  `typetitle` varchar(20) DEFAULT NULL COMMENT '类目名称',
+  `typeid` int(10) DEFAULT 1 COMMENT '类目名称',
+  `tags` varchar(255) NOT NULL COMMENT '标签',
+  `createtime` int(11) DEFAULT NULL COMMENT '创建时间',
+  `updatetime` int(11) DEFAULT NULL COMMENT '更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='小程序列表';
+
+
+php  think  crud  -t  applist  -u  1 -c  applist
+
+
