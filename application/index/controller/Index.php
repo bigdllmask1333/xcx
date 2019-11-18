@@ -137,11 +137,11 @@ class Index {
 	}
 
 	/*这个接口做数据详情页的抓取跟存储*/
-	// http://xcx.com/index.php/index/index/getDetail
+	// http://xcx3.com/index.php/index/index/getDetail
 	// 基础逻辑写完，一个循环全部搞定
 	public function getDetail() {
 
-		$url='http://www.chengxu.la/app-1966.html';
+		$url = 'http://www.chengxu.la/app-1966.html';
 
 		// $ql->find('#one>.two')->html();
 		// $ql = QueryList::get($url)->find('.main')->html();
@@ -150,14 +150,12 @@ class Index {
 		// $titles = $ql->find('h3>a')->texts(); //获取搜索结果标题列表
 		// $links = $ql->find('h3>a')->attrs('href'); //获取搜索结果链接列表
 
-		$title= $ql->find('.main>div:eq(1) h3')->text();
-		$tags= $ql->find('.main>div:eq(1) ul>li:eq(1)>span:eq(1) strong')->text();
-		$images= $ql->find('.main>div:eq(2) .screenshot  img')->attrs('data-original')->all();
-		$qrcode= $ql->find('.qrcode')->src;
-		$remark= $ql->find('.description>p:eq(0)')->text();
+		$title = $ql->find('.main>div:eq(1) h3')->text();
+		$tags = $ql->find('.main>div:eq(1) ul>li:eq(1)>span:eq(1) strong')->text();
+		$images = $ql->find('.main>div:eq(2) .screenshot  img')->attrs('data-original')->all();
+		$qrcode = $ql->find('.qrcode')->src;
+		$remark = $ql->find('.description>p:eq(0)')->text();
 
-
-	
 		echo "<pre>";
 		print_r($title);
 		echo "<hr>";
