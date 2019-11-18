@@ -1,9 +1,8 @@
 <?php
 namespace app\index\controller;
-use QL\QueryList;
-use think\Db;
-
-class Test {
+/*很快*/
+//数据源  http://daohang.henkuai.com/
+class Henkuai {
 
 	/*抓取来源  小程序，小游戏*/
 	// http://www.chengxu.la/
@@ -28,11 +27,10 @@ class Test {
 	//基础数据抓取  SEO优化  表单提交审核  资讯
 
 	/*测试数据*/
-	// http://xcx.com/index.php/index/test/index
+	// http://xcx3.com/index.php/index/henkuai/index
 	public function index() {
 		//采集某页面所有的图片
 		return 'just test';
 	}
 
-	
 }

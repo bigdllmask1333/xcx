@@ -3,6 +3,7 @@ namespace app\index\controller;
 use QL\QueryList;
 use think\Db;
 
+//数据源  http://www.chengxu.la/
 class Index {
 
 	/*抓取来源  小程序，小游戏*/
