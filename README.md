@@ -8,13 +8,16 @@ vender目录可以直接   composer install
 thinkphp目录可以直接找 tp框架 取来用即可
 
 
-拉取代码： git pull origin 
+拉取代码： git pull origin master
+
 git clone https://github.com/cww0128/xcx.git
 
 
 推送代码
 git add .
+
 git commit -m 'cm'
+
 git push origin master
 
 
