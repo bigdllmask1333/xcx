@@ -13,6 +13,16 @@ thinkphp目录可以直接找 tp框架 取来用即可
 git clone https://github.com/cww0128/xcx.git
 
 
+强制拉取远程覆盖到本地
+
+git fetch --all
+
+git reset --hard origin/master
+
+git pull
+
+
+
 推送代码
 git add .
 
