@@ -3,7 +3,7 @@ namespace app\index\controller;
 use QL\QueryList;
 
 /*很快*/
-//数据源  http://daohang.henkuai.com/
+//数据源  http://xcx.96weixin.com
 class Weixin96 {
 
 	//基础数据抓取  SEO优化  表单提交审核  资讯
@@ -17,34 +17,8 @@ class Weixin96 {
 
 	/*TODO  循环遍历出所有数据*/
 
-
-
-
-	/*通过分类获取列表*/
-	//http://daohang.henkuai.com/program/1  直接拿数据
-	public function getlistbytype(){
-		$url = 'http://daohang.henkuai.com/program/1';
-		$ql = QueryList::get($url);
-
-
-
-
-
-		$rt = $ql->rules($rules)->query()->getData();
-		echo "<pre>";
-		print_r($rt->all());
-		echo "</pre>";
-	}
-
-	// http://daohang.henkuai.com/ajaxHandle.php?handle=getlist&page=2&flag=1&sort=new&apptype=1
-	// http://daohang.henkuai.com/ajaxHandle.php?handle=getlist&from=index&id=1
-
-
-
-	//社交 http://daohang.henkuai.com/ajaxHandle.php?handle=getlist&from=index&id=1
-	//资讯 http://daohang.henkuai.com/ajaxHandle.php?handle=getlist&from=index&id=3
-	//全部 http://daohang.henkuai.com/ajaxHandle.php?handle=getlist&from=index
-	// http://xcx3.com/index.php/index/henkuai/getall
+	//购物  http://xcx.96weixin.com/gouwu/index_1.html
+	
 	// 这是通过接口获取列表
 	public function getlist() {
 
@@ -52,27 +26,21 @@ class Weixin96 {
 		TODO 
 		*/
 
-		$url = 'http://daohang.henkuai.com/ajaxHandle.php?handle=getlist&from=index&id=1';
-		// $url = 'http://daohang.henkuai.com/ajaxHandle.php?handle=getlist&from=index&id=1';
-
-		$ql = QueryList::get($url);
-
-		$cdata = json_decode($this->juhecurl($url), true);
-
-		if(!$cdata['html']){
-			echo '暂无数据';
-			return ;
-		}
-		$ql = QueryList::html($cdata['html']);
-		$images = $ql->find('a div img')->attrs('src')->all();
+		$url = 'http://xcx.96weixin.com/gouwu/index_1.html';
 
 		$rules = [
-			'detail' => ['a', 'href'], /*标题*/
-			'img' => ['.ulimg img', 'src'], /*详情页链接*/
-			'title' => ['.program-title', 'text'], /*小图标*/
+			'minititle' => ['.content .wxapp_install>div:eq(1) ul li h5', 'text'], /*标题*/
+			// 'href' => ['.main a', 'href'], /*详情页链接*/
+			// 'mini_image' => ['.main a img', 'src'], /*小图标*/
+			// 'title' => ['.main a em', 'text'], /*大标题*/
+			// 'tags' => ['.main a span', 'text'], /*标签*/
 		];
 
-		$rt = $ql->rules($rules)->query()->getData();
+
+		$rt = QueryList::get($url)->rules($rules)->query()->getData();
+
+		
+
 		echo "<pre>";
 		print_r($rt->all());
 		echo "</pre>";
