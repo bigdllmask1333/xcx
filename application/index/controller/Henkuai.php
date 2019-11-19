@@ -17,18 +17,11 @@ class Henkuai {
 
 	/*TODO  循环遍历出所有数据*/
 
-
-
-
 	/*通过分类获取列表*/
 	//http://daohang.henkuai.com/program/1  直接拿数据
-	public function getlistbytype(){
+	public function getlistbytype() {
 		$url = 'http://daohang.henkuai.com/program/1';
 		$ql = QueryList::get($url);
-
-
-
-
 
 		$rt = $ql->rules($rules)->query()->getData();
 		echo "<pre>";
@@ -36,10 +29,8 @@ class Henkuai {
 		echo "</pre>";
 	}
 
-	// http://daohang.henkuai.com/ajaxHandle.php?handle=getlist&page=2&flag=1&sort=new&apptype=1
+	// http://daohang.henkuai.com/ajaxHandle.php?handle=getlist&page=2&flag=1&sort=new&apptype=1   分类接口地址（TODO 需要做分页处理，还需要对404进行处理）
 	// http://daohang.henkuai.com/ajaxHandle.php?handle=getlist&from=index&id=1
-
-
 
 	//社交 http://daohang.henkuai.com/ajaxHandle.php?handle=getlist&from=index&id=1
 	//资讯 http://daohang.henkuai.com/ajaxHandle.php?handle=getlist&from=index&id=3
@@ -57,9 +48,9 @@ class Henkuai {
 
 		$cdata = json_decode($this->juhecurl($url), true);
 
-		if(!$cdata['html']){
-			echo '暂无数据'
-			return ;
+		if (!$cdata['html']) {
+			echo '暂无数据';
+			return;
 		}
 		$ql = QueryList::html($cdata['html']);
 		$images = $ql->find('a div img')->attrs('src')->all();
@@ -117,7 +108,7 @@ class Henkuai {
 
 	/*获取详情*/
 	// http://xcx.com/index.php/index/henkuai/getDetail
-	public function getDetail(){
+	public function getDetail() {
 		$url = 'http://daohang.henkuai.com/detail/8125.html';
 		$ql = QueryList::get($url);
 
