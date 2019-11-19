@@ -19,6 +19,6 @@ CREATE TABLE `fa_applist` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='小程序列表';
 
 
-php  think  crud  -t  applist  -u  1 -c  applist
+
 
 
