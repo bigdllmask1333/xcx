@@ -47,7 +47,7 @@ class Weixin96 {
 	}
 
 	/*获取详情*/
-	// http://xcx.com/index.php/index/henkuai/getDetail
+	// http://xcx3.com/index.php/index/index/getDetail
 	public function getDetail() {
 		$url = 'http://xcx.96weixin.com/gouwu/4050.html';
 		$ql = QueryList::get($url);
