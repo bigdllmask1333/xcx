@@ -1,7 +1,8 @@
 小程序爬爬爬...大全应用啦
 ===============
 
-
+选择器
+===============
 耍好Jquery选择器，什么都不怕
 
 https://www.csdn.net/gather_2d/OtTaEg5sMjk1LWJsb2cO0O0O.html
@@ -10,6 +11,10 @@ jquery选择器 contains(text) 找到包含特定文本的元素
 
 https://blog.csdn.net/m0_37359464/article/details/66974002
 
+
+
+git 命令（粗鲁）
+===============
 
 少一个vendor 跟 thinkphp目录 需要自己去加上
 
@@ -42,6 +47,7 @@ git push origin master
 
 
 数据源
+================
 
 /*抓取来源  小程序，小游戏*/
 
