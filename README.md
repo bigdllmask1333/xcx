@@ -1,6 +1,16 @@
 小程序爬爬爬...大全应用啦
 ===============
 
+
+耍好Jquery选择器，什么都不怕
+
+https://www.csdn.net/gather_2d/OtTaEg5sMjk1LWJsb2cO0O0O.html
+
+jquery选择器 contains(text) 找到包含特定文本的元素
+
+https://blog.csdn.net/m0_37359464/article/details/66974002
+
+
 少一个vendor 跟 thinkphp目录 需要自己去加上
 
 vender目录可以直接   composer install

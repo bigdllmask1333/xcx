@@ -2,14 +2,14 @@
 namespace app\index\controller;
 use QL\QueryList;
 
-/*很快*/
+/*96微信*/
 //数据源  http://xcx.96weixin.com
 class Weixin96 {
 
 	//基础数据抓取  SEO优化  表单提交审核  资讯
 
 	/*测试数据*/
-	// http://xcx.com/index.php/index/weixin96/index
+	// http://xcx.com/index.php/index/weixin96/getlist
 	public function index() {
 		//采集某页面所有的图片
 		return 'just test';
@@ -18,28 +18,28 @@ class Weixin96 {
 	/*TODO  循环遍历出所有数据*/
 
 	//购物  http://xcx.96weixin.com/gouwu/index_1.html
-	
+
 	// 这是通过接口获取列表
 	public function getlist() {
 
 		/*倒序循环10页
-		TODO 
+			TODO
 		*/
 
 		$url = 'http://xcx.96weixin.com/gouwu/index_1.html';
 
 		$rules = [
 			'minititle' => ['.content .wxapp_install>div:eq(1) ul li h5', 'text'], /*标题*/
-			// 'href' => ['.main a', 'href'], /*详情页链接*/
-			// 'mini_image' => ['.main a img', 'src'], /*小图标*/
-			// 'title' => ['.main a em', 'text'], /*大标题*/
-			// 'tags' => ['.main a span', 'text'], /*标签*/
+			'discription' => ['.content .wxapp_install>div:eq(1) ul li p', 'text'], /*描述*/
+			'qrcode' => ['.content .wxapp_install>div:eq(1) ul li .wxapp-open img', 'src'], /*图片*/
+			'detail' => ['.content .wxapp_install>div:eq(1) ul li .wxapp-applogo', 'href'], /*详情页*/
+			'img' => ['.content .wxapp_install>div:eq(1) ul li .wxapp-applogo img', 'src'], /*缩略图片*/
+			// 'type1' => ['.content .wxapp_install>div:eq(1) .wxapp-index-title h5', 'text'], /*分类*/
+			// 'type1' => ['.content .wxapp_install>div:eq(1) ul li dl dt', 'text'], /*分类*/
+			'type' => ['.content .wxapp_install>div:eq(1) ul li dl dd:contains("分类"))', 'text'], /*分类*/
 		];
 
-
 		$rt = QueryList::get($url)->rules($rules)->query()->getData();
-
-		
 
 		echo "<pre>";
 		print_r($rt->all());
@@ -87,7 +87,7 @@ class Weixin96 {
 
 	/*获取详情*/
 	// http://xcx.com/index.php/index/henkuai/getDetail
-	public function getDetail(){
+	public function getDetail() {
 		$url = 'http://daohang.henkuai.com/detail/8125.html';
 		$ql = QueryList::get($url);
 
