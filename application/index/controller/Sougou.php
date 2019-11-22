@@ -1,6 +1,5 @@
 <?php
 namespace app\index\controller;
-use QL\QueryList;
 
 /*搜狗123*/
 //数据源  http://123.sogou.com/wxapp/
@@ -27,8 +26,6 @@ class Sougou {
 		/*这里page_size 可以随便改*/
 		$url = 'http://123.sogou.com/wxapp/apps/getRecommendAppByTagName?tag_name=工具&page=1&page_size=10';
 		// $url = 'http://daohang.henkuai.com/ajaxHandle.php?handle=getlist&from=index&id=1';
-
-		$ql = QueryList::get($url);
 
 		$cdata = json_decode($this->juhecurl($url), true);
 
@@ -85,35 +82,18 @@ class Sougou {
 	/*获取详情*/
 	// http://xcx3.com/index.php/index/sougou/getDetail
 	public function getDetail() {
-		$url = 'http://123.sogou.com/wxapp/appDetail.html?id=3068';
-		$ql = QueryList::get($url);
-		$rt['content'] = $ql->find('.post_content')->html();
-		// $ql = QueryList::get($url)->find('body')->html();
-		// print_r($ql);
-		// return;
 
-		$title = $ql->find('.main .main-cont .main-cont-left .clearfix h1')->text();
-		$tags = $ql->find('.main .main-cont .main-cont-left .clearfix a')->attrs('href')->all();
-		$qrcode = $ql->find('.main .main-cont .ewmcode img')->src;
-		$images = $ql->find('.main .main-cont .match-list img')->attrs('src')->all();
-		$remark = $ql->find('.main>div:eq(2) .screenshot')->text();
-		$typesurl = $ql->find('.main>div:eq(0) .main-cont-left>div:eq(1) ul>li:eq(0) a')->href;
-		$typesname = $ql->find('.main>div:eq(0) .main-cont-left>div:eq(1) ul>li:eq(0) a')->text();
+		$url1 = 'http://123.sogou.com/wxapp/apps/getAppDetailById?id=3068';
+		$url2 = 'http://123.sogou.com/wxapp/apps/getAppImageById?id=3068';
+		// $url = 'http://daohang.henkuai.com/ajaxHandle.php?handle=getlist&from=index&id=1';
+
+		$cdata1 = json_decode($this->juhecurl($url1), true);
+		$cdata2 = json_decode($this->juhecurl($url2), true);
 
 		echo "<pre>";
-		print_r($title);
-		echo "<hr>";
-		print_r($tags);
-		echo "<hr>";
-		print_r($qrcode);
-		echo "<hr>";
-		print_r($images);
-		echo "<hr>";
-		print_r($remark);
-		echo "<hr>";
-		print_r($typesurl);
-		echo "<hr>";
-		print_r($typesname);
+		print_r($cdata1['data']);
+		print_r($cdata2['data']);
 		echo "</pre>";
+
 	}
 }
