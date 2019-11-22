@@ -1,610 +1,1182 @@
+<!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-        <meta name="theme-color" content="#000000">
-        <link rel="manifest" href="/wxapp/manifest.json">
-        <link rel="shortcut icon" href="/wxapp/favicon.ico" type="image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>
-            跳一跳小程序_跳一跳小程序二维码_搜狗小程序大全
+            生活小程序_微信生活小程序大全_生活小程序排行榜-安软市场
         </title>
-        <style type="text/css">
-            html { color: #262626; background: #f5f5f5; font: 12px '\5FAE\8F6F\96C5\9ED1','tahoma','arial','sans-serif';
-            } * { margin: 0; padding: 0; } table { border-collapse: collapse; border-spacing:
-            0; } fieldset, img { border: 0; } address, button, caption, cite, code,
-            dfn, em, input, optgroup, option, select, strong, textarea, th, var, b
-            { font-style: normal; font-weight: normal; } del, ins { text-decoration:
-            none; } li { list-style: none; } caption, th { text-align: left; } h1,
-            h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; } q:before,
-            q:after { content: ''; } abbr, acronym { border: 0; font-variant: normal;
-            } sup { vertical-align: baseline; } sub { vertical-align: baseline; } legend
-            { color: #262626; } a { color: #262626; text-decoration: none; } a:hover
-            { text-decoration: none; cursor: pointer; } a { outline: none; } a:focus
-            { outline: 0; } /*a{noFocusLine: expression(this.onFocus = this.blur())}*/
-            input { border: 0 none; } input:focus { outline: none; } input::-webkit-input-placeholder
-            { color: #bfbfbf; } input:-moz-placeholder { color: #bfbfbf; } input::-moz-placeholder
-            { color: #bfbfbf; } input:-ms-input-placeholder { color: #bfbfbf; }
-        </style>
-        <style type="text/css">
-            /*Public*/ .cf:before, .cf:after, .wrapper:before, .wrapper:after, .container:before,
-            .container:after { content: " "; display: table; } .cf:after, .wrapper:after,
-            .container:after { clear: both; } .cf, .wrapper, .container { zoom: 1;
-            } html, body { height: 100%; } #root { height: 100%; } .app-wrap { min-height:
-            100%; padding-bottom: 170px; position: relative; -webkit-box-sizing: border-box;
-            box-sizing: border-box; } .container { width: 1190px; margin: 0 auto; }
-            .ct { text-indent: -999em; text-align: left; overflow: hidden; font-size:
-            0; line-height: 0; } .usn { -webkit-user-select: none; -moz-user-select:
-            none; -ms-user-select: none; -o-user-select: none; user-select: none; }
-            .txe { overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis;
-            white-space: nowrap; } .mod .ml { float: left; width: 890px; } .mod .mr
-            { float: left; width: 290px; margin-left: 10px; } .more { height: 36px;
-            line-height: 36px; background-color: #FFF; overflow: hidden; text-align:
-            center; font-size: 14px; color: #595959; cursor: pointer; display: block;
-            } .more:hover { background-color: #3697ff; color: #FFF; } .nomore { height:
-            36px; line-height: 36px; background-color: #FFF; overflow: hidden; text-align:
-            center; font-size: 14px; color: #bfbfbf; }
-        </style>
-        <style type="text/css">
-            .app-header { margin-bottom: 10px; height: 80px; background-color: #FFF;
-            } .app-header .logo { float: left; padding-top: 16px; width: 200px; } .app-header
-            .logo a { display: block; } .app-header .nav a:hover { color: #3697ff;
-            }
-        </style>
-        <style type="text/css">
-            .nav { float: left; margin-left: 94px; padding-top: 18px; } .nav a { float:
-            left; padding: 0 7px; margin-right: 52px; height: 38px; line-height: 38px;
-            font-size: 18px; border-bottom: 2px solid #FFF; cursor: pointer; } .nav
-            a:last-child { margin-right: 0; } .nav .cur { color: #3697ff; border-bottom-color:
-            #3697ff; }
-        </style>
-        <style type="text/css">
-            .app-header .search { float: right; padding-top: 20px; } .app-header .search-panel
-            { position: relative; width: 288px; height: 38px; border: 1px solid #CCC;
-            border-radius: 2px; } .app-header .search-panel input { margin-top: 8px;
-            padding-left: 9px; width: 240px; height: 22px; line-height: 22px; font-size:
-            14px; color: #7b7b7b; } .app-header .search-panel .icon { position: absolute;
-            top: 8px; right: 9px; width: 23px; height: 23px; background: url(/wxapp/static/media/xb.d9915a1b.png);
-            background-position: 0 -32px; } .app-header .search-panel .icon:hover {
-            background-position: 0 -58px; } .app-header .search-panel .icon:active
-            { background-position: 0 -84px; } .app-header .search-focus { border: 1px
-            solid #bfbfbf; }
-        </style>
-        <style type="text/css">
-            .app-footer { position: absolute; bottom: 0; width: 100%; } .app-footer
-            .inner { padding: 40px 0 46px; background-color: #ebebeb; text-align: center;
-            } .app-footer .inner p { line-height: 32px; text-align: center; color:
-            #7b7b7b; } .app-footer .inner a { padding: 0 12px; color: #7b7b7b; }
-        </style>
-        <style type="text/css">
-            .hs-list { padding: 25px 0 30px; height: 125px; background-color: #FFF;
-            overflow: hidden; } .hs-list .tit { margin-bottom: 16px; padding-left:
-            30px; height: 24px; line-height: 24px; font-size: 16px; font-weight: 600;
-            } .hs-list .list { padding-left: 5px; height: 85px; overflow: hidden; }
-            .hs-list .ce { float: left; width: 84px; margin-left: 23px; } .hs-list
-            .ce .pic { width: 60px; height: 60px; margin: 0 auto 7px; } .hs-list .ce
-            .pic img { width: 60px; height: 60px; display: block; border-radius: 50%;
-            } .hs-list .ce .nm { width: 84px; height: 18px; line-height: 18px; font-size:
-            14px; text-align: center; } .hs-list .ce:hover .nm { color: #3697ff; }
-        </style>
-        <style type="text/css">
-            .hot-rank { padding-bottom: 10px; width: 290px; overflow: hidden; background-color:
-            #FFF; } .hot-rank .tit { padding: 0 10px; height: 42px; line-height: 42px;
-            border-bottom: 1px solid #f5f5f5; } .hot-rank .tit h3 { padding-left: 6px;
-            font-size: 16px; font-weight: 600; } .hot-rank .cell { display: block;
-            padding: 0 20px; height: 60px; border-bottom: 1px solid #f5f5f5; } .hot-rank
-            .cell:last-child { border-bottom: 0 none; } .hot-rank .cell:nth-child(-n+3)
-            .in i { font-style: italic; font-weight: 600; font-size: 18px; } .hot-rank
-            .cell:nth-child(1) .in i { background: url(/wxapp/static/media/xb.d9915a1b.png)
-            no-repeat; background-position: 0 -126px; } .hot-rank .cell:nth-child(2)
-            .in i { background: url(/wxapp/static/media/xb.d9915a1b.png) no-repeat;
-            background-position: 0 -154px; } .hot-rank .cell:nth-child(3) .in i { background:
-            url(/wxapp/static/media/xb.d9915a1b.png) no-repeat; background-position:
-            0 -182px; } .hot-rank .cell:hover { background-color: #f0f0f0; border-bottom-color:
-            #f0f0f0; } .hot-rank .in i { float: left; margin-top: 19px; width: 30px;
-            height: 24px; line-height: 24px; font-size: 16px; text-align: center; font-style:
-            normal; } .hot-rank .in .pic { float: left; margin-left: 18px; padding-top:
-            10px; width: 40px; height: 40px; } .hot-rank .in .pic img { display: block;
-            width: 40px; height: 40px; border-radius: 50%; } .hot-rank .in .info {
-            float: left; margin-left: 20px; padding-top: 7px; width: 142px; } .hot-rank
-            .in .info h4 { margin-bottom: 5px; font-size: 14px; height: 20px; line-height:
-            20px; overflow: hidden; } .hot-rank .in .info p { height: 16px; line-height:
-            16px; font-size: 12px; color: #8c8c8c; overflow: hidden; -o-text-overflow:
-            ellipsis; text-overflow: ellipsis; white-space: nowrap; }
-        </style>
-        <style type="text/css">
-            .article-cnt { margin-bottom: 20px; } .ac-top { margin-bottom: 10px; padding:
-            30px 0; height: 100px; background-color: #FFF; } .ac-top img { display:
-            block; width: 100px; height: 100px; } .ac-top .pic { float: left; margin-left:
-            30px; width: 100px; height: 100px; } .ac-top .pic img { border-radius:
-            50%; } .ac-top .info { float: left; margin-left: 20px; height: 100px; }
-            .ac-top .info .tit { margin-bottom: 16px; height: 26px; line-height: 24px;
-            overflow: hidden; font-size: 24px; line-height: 1; } .ac-top .info .res
-            { margin-bottom: 18px; height: 16px; line-height: 16px; font-size: 14px;
-            color: #8c8c8c; } .ac-top .info .res .r { float: left; } .ac-top .info
-            .res .t { float: left; margin-left: 20px; } .ac-top .info .type { height:
-            26px; overflow: hidden; } .ac-top .info .type .c { float: left; margin-right:
-            10px; padding: 0 18px; height: 26px; line-height: 26px; background-color:
-            #f1f1f1; color: #8c8c8c; border-radius: 2px; } .ac-top .info .type .c:hover
-            { background-color: #3697ff; color: #FFF; } .ac-top .code { position: relative;
-            float: right; margin-right: 50px; width: 100px; height: 100px; -webkit-transform:
-            scale(1.4); -ms-transform: scale(1.4); transform: scale(1.4); } .ac-top
-            .code .big { position: absolute; visibility: hidden; width: 200px; height:
-            200px; left: -210px; } .ac-top .code .show { visibility: inherit; } .ac-cnt
-            { margin-bottom: 10px; padding: 25px 30px; background-color: #FFF; } .ac-cnt
-            .tit { height: 24px; line-height: 24px; font-size: 16px; font-weight: 600;
-            } .ac-cnt .imgs { padding-top: 16px; margin-bottom: 36px; height: 468px;
-            overflow: hidden; } .ac-cnt .imgs img { float: left; margin-right: 10px;
-            width: 268px; height: 468px; border: 1px solid #f0f0f0; } .ac-cnt .imgs
-            img:last-child { margin-right: 0; } .ac-cnt .desc { padding-top: 10px;
-            line-height: 26px; color: #595959; font-size: 14px; } .ac-cnt .desc p {
-            margin-bottom: 30px; } .ac-cnt .desc p:last-child { margin-bottom: 0; }
-        </style>
+        <meta name="description" content="安软市场微信生活小程序为大家提供好用的生活小程序、生活小程序排行榜、生活小程序推荐，想要知道当前什么生活小程序最受欢迎就来安软市场。">
+        <meta http-equiv="mobile-agent" content="format=html5; url=https://m.anruan.com/xcxlist/101_1_1.html"
+        />
+        <link href="/Public/xcx/css/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="/Public/xcx/css/an-h5-commen.css"
+        />
+        <meta name="applicable-device" content="pc" />
+        <meta http-equiv="Cache-Control" content="no-transform " />
+        <meta http-equiv="Cache-Control" content="no-siteapp" />
+        <script src="/Public/xcx/js/jquery-1.11.1.min.js" type="text/javascript"
+        charset="utf-8">
+        </script>
     </head>
     <body>
-        <!--[if lt IE 9]>
-            <div class="browertips">
-                <div class="wrap">
-                    <p>
-                        您的浏览器版本过低，可能导致网站不能正常访问。为了您能正常使用网站功能，请使用
-                        <a href="http://xiazai.sogou.com/detail/34/8/2370373982975054889.html?uID=i6v7Ql5oaDvjRSO1"
-                        target="_blank">
-                            搜狗
+        <script src="/Public/skin/js/lazyload.js" type="text/javascript">
+        </script>
+        <div class="QZ_top">
+            <div class="QZ_head W1200">
+                <!--left-->
+                <ul class="QZ_link fl">
+                    <li>
+                        <i class="home">
+                        </i>
+                        <a href="https://www.anruan.com/">
+                            首页
                         </a>
-                        、
-                        <a href="http://xiazai.sogou.com/detail/34/8/6262355089742005676.html?uID=SjQ9Ts47rkmDD81k&w=2295"
-                        target="_blank">
-                            Chrome
+                    </li>
+                    <li>
+                        <a href="https://soft.anruan.com/new/">
+                            安卓软件
                         </a>
-                        、
-                        <a href="http://xiazai.sogou.com/detail/34/8/-663866167220463725.html?uID=i6v7Ql5oaDvjRSO1"
-                        target="_blank">
-                            IE10
+                    </li>
+                    <li>
+                        <a href="https://game.anruan.com/gnew/">
+                            安卓游戏
                         </a>
-                        、
-                        <a href="http://xiazai.sogou.com/detail/34/8/-7066967717758185116.html?uID=SjQ9Ts47rkmDD81k"
-                        target="_blank">
-                            火狐
+                    </li>
+                    <li>
+                        <a href="https://soft.anruan.com/iosnew/">
+                            苹果软件
                         </a>
-                        等浏览器。
-                    </p>
-                </div>
-            </div>
-        <![endif]-->
-        <div id="root">
-            <div class="app-wrap">
-                <div class="app-header" pbflag="wc_顶部">
-                    <div class="container">
-                        <div class="logo">
-                            <a href="./index.html">
-                                <img src="/wxapp/static/media/logo.fa2d0fa0.jpg" alt="logo">
-                            </a>
-                        </div>
-                        <div class="nav">
-                            <a class="" href="./index.html">
-                                首页
-                            </a>
-                            <a class="" href="./article.html">
-                                文章
-                            </a>
-                            <a class="" href="./rank.html">
-                                排行榜
-                            </a>
-                        </div>
-                        <a class="search" pbflag="wc_search">
-                            <div class="search-panel ">
-                                <input type="text" class="search-input" placeholder="" autocomplete="off"
-                                maxlength="30" value="">
-                                <i class="icon i-search ct">
-                                    搜一下
-                                </i>
+                    </li>
+                    <li>
+                        <a href="https://game.anruan.com/iosnew/">
+                            苹果游戏
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://soft.anruan.com/pcnew/">
+                            电脑软件
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://game.anruan.com/pcnew/">
+                            手游电脑版
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.anruan.com/h5/">
+                            H5游戏
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.anruan.com/xcx/">
+                            小程序
+                        </a>
+                    </li>
+                </ul>
+                <!--right-->
+                <div class="QZ-nav fr">
+                    <ul>
+                        <li>
+                            <i class="wx">
+                            </i>
+                            <p>
+                                微信公众号
+                            </p>
+                            <div class="ewm">
+                                <img src="/Public/skin/img/img-ewm.png" />
+                                <span>
+                                    微信扫一扫
+                                </span>
                             </div>
-                            <div class="search-list">
-                                <ul>
+                        </li>
+                        <li>
+                            <i class="sj">
+                            </i>
+                            <p>
+                                手机客户端
+                            </p>
+                            <div class="ewm">
+                                <img src="/Public/skin/img/img-sj.png" />
+                                <span>
+                                    欢迎加入安软市场
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="dh">
+                            </i>
+                            <p>
+                                全站导航
+                            </p>
+                            <span class="sj">
+                            </span>
+                            <div class="navlis">
+                                <ul class="lis_1">
+                                    <li>
+                                        <p>
+                                            游戏下载
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="https://game.anruan.com/g-2271/">
+                                            我的世界手机版
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://game.anruan.com/g-27199/">
+                                            三国群英传：霸王之业
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/yxxz/66552.html">
+                                            和平精英
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://game.anruan.com/g-20648/">
+                                            拳皇命运
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/game/33917.html">
+                                            荒野行动
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://game.anruan.com/g-9523/">
+                                            泰拉瑞亚
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://game.anruan.com/g-21486/">
+                                            王者传奇
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://game.anruan.com/g-15954/">
+                                            王者荣耀
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="lis_2">
+                                    <li>
+                                        <p>
+                                            软件下载
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.anruan.com/rjxz/69423.html">
+                                            腾讯网游加速器
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.anruan.com/rjxz/69902.html">
+                                            抖抖直播
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://soft.anruan.com/1789/">
+                                            360手机助手
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://soft.anruan.com/1929/">
+                                            腾讯手机管家
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://soft.anruan.com/10678/">
+                                            应用宝
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://soft.anruan.com/25718/">
+                                            阿尔法浏览器
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://soft.anruan.com/17109/">
+                                            聊客直播
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://soft.anruan.com/1701/">
+                                            UC浏览器
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="lis_3">
+                                    <li>
+                                        <p>
+                                            新闻攻略
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/news_149.html">
+                                            游戏攻略
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/news_152.html">
+                                            游戏活动
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/news_153.html">
+                                            游戏评测
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/news_148.html">
+                                            游戏资讯
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/news_150.html">
+                                            软件教程
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/news_148.html">
+                                            软件资讯
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/news_154.html">
+                                            视频攻略
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="lis_4">
+                                    <li>
+                                        <p>
+                                            专题专区
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/zt/wzry.html">
+                                            王者荣耀
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/zt/qhmy.html">
+                                            拳皇命运
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/zt/hpjy.html">
+                                            和平精英
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/zt/cyhxqzwz.html">
+                                            穿越火线：枪战王者
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/zt/pubgm.html">
+                                            绝地求生：全军出击
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/zt/qjzqz.html">
+                                            奇迹：最强者
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/zt/blzysy.html">
+                                            堡垒之夜
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/zt/wdsjsjb.html">
+                                            我的世界手机版
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/zt/hyxd.html">
+                                            荒野行动
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="lis_5">
+                                    <li>
+                                        <p>
+                                            排行榜
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/top/soft/wxqhb.html">
+                                            抢红包软件排行榜
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/top/soft/root.html">
+                                            ROOT软件排行榜
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/top/game/chiji.html">
+                                            吃鸡手游排行榜
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/top/soft/llq.html">
+                                            浏览器排行榜
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/top/game/chuanqi.html">
+                                            传奇手游排行榜
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/top/soft/myrj.html">
+                                            美颜相机排行榜
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/top/soft/yuerrj.html">
+                                            育儿软件排行榜
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/top/soft/zbrj.html">
+                                            直播app排行榜
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="lis_6">
+                                    <li>
+                                        <p>
+                                            特色栏目
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/xitong/" rel="nofollow">
+                                            电脑系统
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/xcx/" rel="nofollow">
+                                            小程序
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/h5/" rel="nofollow">
+                                            在线H5游戏
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/libao/" rel="nofollow">
+                                            手游礼包
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.anruan.com/kc/">
+                                            手游开测表
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--nav-->
+        <div class="Home">
+            <div class="W1200">
+                <a href="/xcx/" target="_blank" class="logo fl">
+                    <img src="/Public/xcx/images/logoh5.png">
+                </a>
+                <div class="nav fl">
+                    <a href="/xcx/">
+                        首页
+                    </a>
+                    <a href="/xcxlist/" class="on">
+                        小程序
+                    </a>
+                    <a href="/xcxhj/">
+                        合集
+                    </a>
+                </div>
+                <!--Search-->
+                <!--<div class="Search fr">
+                <form action="/Home/Index/search.html" method="get" target="_blank">
+                <input class="key fl" name="keyword" placeholder="请输入搜索词" type="text">
+                <input class="btn fr" name="" type="submit" value="">
+                </form>
+                </div>-->
+            </div>
+        </div>
+        <!--crumb_nav 位置-->
+        <div class="crumb_nav W1200">
+            <a href="/">
+                安软市场
+            </a>
+            <span>
+                >
+            </span>
+            <a href="/xcx/">
+                小程序
+            </a>
+            <span>
+                >
+            </span>
+            <a href="/xcxlist/101_1_1.html">
+                生活
+            </a>
+        </div>
+        <div class="an_h5_list">
+            <div class="nav_list_a">
+                <a href="/xcxlist/">
+                    全部
+                </a>
+                <a href="/xcxlist/107_1_1.html">
+                    游戏
+                </a>
+                <a href="/xcxlist/101_1_1.html" class="on">
+                    生活
+                </a>
+                <a href="/xcxlist/102_1_1.html">
+                    购物
+                </a>
+                <a href="/xcxlist/103_1_1.html">
+                    资讯
+                </a>
+                <a href="/xcxlist/104_1_1.html">
+                    影音
+                </a>
+                <a href="/xcxlist/105_1_1.html">
+                    出行
+                </a>
+                <a href="/xcxlist/106_1_1.html">
+                    金融
+                </a>
+                <a href="/xcxlist/108_1_1.html">
+                    运动
+                </a>
+                <a href="/xcxlist/109_1_1.html">
+                    图像
+                </a>
+                <a href="/xcxlist/110_1_1.html">
+                    教育
+                </a>
+                <a href="/xcxlist/111_1_1.html">
+                    工具
+                </a>
+                <a href="/xcxlist/112_1_1.html">
+                    健康
+                </a>
+                <a href="/xcxlist/113_1_1.html">
+                    阅读
+                </a>
+                <a href="/xcxlist/114_1_1.html">
+                    搞笑
+                </a>
+                <a href="/xcxlist/115_1_1.html">
+                    办公
+                </a>
+                <a href="/xcxlist/116_1_1.html">
+                    社交
+                </a>
+            </div>
+            <div class="Min2R_top">
+                <a href="/xcxlist/101_1_1.html" class="on">
+                    最新
+                </a>
+                <i>
+                </i>
+                <a href="/xcxlist/101_2_1.html">
+                    热门
+                </a>
+                <i>
+                </i>
+                <a href="/xcxlist/101_3_1.html">
+                    推荐
+                </a>
+            </div>
+            <div class="sou_h5_net">
+                <div class="net">
+                    <ul>
+                        <li>
+                            <a href="/xcx/2322.html" target="_blank" class="img">
+                                <img src="/Public/upload/cover/20181215/1544835223376122.png">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2322.html" target="_blank" class="bt">
+                                    灵鲲金融风险查询举报中心
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-12-15
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2317.html" target="_blank" class="img">
+                                <img src="/Public/upload/cover/20180917/1537150742150183.png">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2317.html" target="_blank" class="bt">
+                                    山竹台风路径预测
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-17
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2316.html" target="_blank" class="img">
+                                <img src="/Public/upload/cover/20180917/1537150742150183.png">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2316.html" target="_blank" class="bt">
+                                    山竹台风
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-17
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2314.html" target="_blank" class="img">
+                                <img src="https://www.anruan.com/Public/upload/downpic/20180228/1519818874352.png">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2314.html" target="_blank" class="bt">
+                                    驴妈妈门票预订
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-15
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2304.html" target="_blank" class="img">
+                                <img src="/Public/upload/cover/20180911/1536628010937264.jpg">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2304.html" target="_blank" class="bt">
+                                    美团门票
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-14
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2303.html" target="_blank" class="img">
+                                <img src="https://www.anruan.com/Public/upload/downpic/20180301/1519881523342.png">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2303.html" target="_blank" class="bt">
+                                    途牛门票
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-14
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2302.html" target="_blank" class="img">
+                                <img src="https://www.anruan.com/Public/upload/downpic/20180302/1519958420112.jpg">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2302.html" target="_blank" class="bt">
+                                    小泥人景点门票
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-14
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2301.html" target="_blank" class="img">
+                                <img src="/Public/upload/cover/20180911/1536627261974206.jpg">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2301.html" target="_blank" class="bt">
+                                    大觉转票
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-14
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2283.html" target="_blank" class="img">
+                                <img src="https://www.anruan.com/Public/upload/downpic/20180301/1519900702674.png">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2283.html" target="_blank" class="bt">
+                                    小妞优惠
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-14
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2315.html" target="_blank" class="img">
+                                <img src="/Public/upload/cover/20180912/1536734734161685.jpg">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2315.html" target="_blank" class="bt">
+                                    北京市政交通一卡通
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-12
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2308.html" target="_blank" class="img">
+                                <img src="https://www.anruan.com/Public/upload/downpic/20180302/1519960078742.jpg">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2308.html" target="_blank" class="bt">
+                                    小猫不差钱
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-12
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2307.html" target="_blank" class="img">
+                                <img src="https://www.anruan.com/Public/upload/downpic/20180302/1519968947865.jpg">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2307.html" target="_blank" class="bt">
+                                    欧尾猫
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-12
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2306.html" target="_blank" class="img">
+                                <img src="https://www.anruan.com/Public/upload/downpic/20180302/1519977843806.jpg">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2306.html" target="_blank" class="bt">
+                                    医秒成单
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-12
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2300.html" target="_blank" class="img">
+                                <img src="https://www.anruan.com/Public/upload/downpic/20180228/1519816484772.jpg">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2300.html" target="_blank" class="bt">
+                                    天天P图
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-11
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2299.html" target="_blank" class="img">
+                                <img src="https://www.anruan.com/Public/upload/downpic/20180301/1519876468859.png">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2299.html" target="_blank" class="bt">
+                                    必去机票
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-11
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2298.html" target="_blank" class="img">
+                                <img src="/Public/upload/cover/20180911/1536626053769218.png">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2298.html" target="_blank" class="bt">
+                                    一起飞国际机票
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-11
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2296.html" target="_blank" class="img">
+                                <img src="https://www.anruan.com/Public/upload/downpic/20180302/1519973486732.jpg">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2296.html" target="_blank" class="bt">
+                                    鉴定大师lver
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-11
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2295.html" target="_blank" class="img">
+                                <img src="/Public/upload/cover/20180910/1536541251550447.jpg">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2295.html" target="_blank" class="bt">
+                                    化妆品点评
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-10
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2292.html" target="_blank" class="img">
+                                <img src="https://www.anruan.com/Public/upload/downpic/20180302/1519969083553.jpg">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2292.html" target="_blank" class="bt">
+                                    就想玩微游
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-10
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/xcx/2291.html" target="_blank" class="img">
+                                <img src="https://www.anruan.com/Public/upload/downpic/20180302/1519973258987.jpg">
+                            </a>
+                            <div class="tes">
+                                <a href="/xcx/2291.html" target="_blank" class="bt">
+                                    Dcake烘焙坊
+                                </a>
+                                <p class="p">
+                                    生活
+                                </p>
+                                <p class="p">
+                                    2018-09-10
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pager" id="pager">
+                    <div class="page">
+                        <span class='current'>
+                            1
+                        </span>
+                        <a href='/xcxlist/101_1_2.html' class=''>
+                            2
                         </a>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="mod cf article-cnt" pbflag="wc_内容">
-                        <div class="ml">
-                            <div class="ac-top cf">
-                                <div class="pic">
-                                    <img src="http://img03.sogoucdn.com/app/a/200869/5ea250fd2514d3970246303e5b2c0da4.jpg"
-                                    alt="">
-                                </div>
-                                <div class="info">
-                                    <h2 class="tit">
-                                        跳一跳
-                                    </h2>
-                                    <div class="res cf">
-                                        <span class="r">
-                                            作者：跳一跳团队
-                                        </span>
-                                    </div>
-                                    <div class="type cf">
-                                        <a href="./rank.html?tag_name=工具" class="c" target="_blank">
-                                            工具
-                                        </a>
-                                        <a href="./rank.html?tag_name=社交" class="c" target="_blank">
-                                            社交
-                                        </a>
-                                        <a href="./rank.html?tag_name=游戏" class="c" target="_blank">
-                                            游戏
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="code">
-                                    <img class="big " src="http://img03.sogoucdn.com/app/a/200869/d6d796a18a67675941570426d538cebf.jpg"
-                                    alt="">
-                                    <img src="http://img03.sogoucdn.com/app/a/200869/d6d796a18a67675941570426d538cebf.jpg"
-                                    alt="">
-                                </div>
-                            </div>
-                            <div class="ac-cnt">
-                                <h3 class="tit">
-                                    跳一跳截图
-                                </h3>
-                                <div class="imgs cf">
-                                    <img src="http://img03.sogoucdn.com/app/a/200869/feb059d943554165b63a9922c94c44e9.jpeg"
-                                    alt="">
-                                    <img src="http://img04.sogoucdn.com/app/a/200869/8cae34ab7698267ab05d6012a83d478e.jpeg"
-                                    alt="">
-                                    <img src="http://img02.sogoucdn.com/app/a/200869/db1d8e65d626891a05415d66932e1fd3.jpeg"
-                                    alt="">
-                                </div>
-                                <h3 class="tit">
-                                    跳一跳介绍
-                                </h3>
-                                <div class="desc">
-                                    <p>
-                                        比比看，谁跳得更远
-                                    </p>
-                                    <p>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="hs-list" pbflag="wc_推荐">
-                                <h4 class="tit">
-                                    看了跳一跳的人还看了
-                                </h4>
-                                <div class="cf list">
-                                    <a class="ce" href="./appDetail.html?id=3068" target="_blank">
-                                        <div class="pic">
-                                            <img src="http://img01.sogoucdn.com/app/a/200869/bcc264798a1317e052c23f376ba19461.jpg"
-                                            alt="">
-                                        </div>
-                                        <p class="nm txe">
-                                            摩拜单车
-                                        </p>
-                                    </a>
-                                    <a class="ce" href="./appDetail.html?id=10782" target="_blank">
-                                        <div class="pic">
-                                            <img src="http://img04.sogoucdn.com/app/a/200869/ac9ecf303c0bea6fc72952a672e0f81a.jpg"
-                                            alt="">
-                                        </div>
-                                        <p class="nm txe">
-                                            携程酒店机票火车票
-                                        </p>
-                                    </a>
-                                    <a class="ce" href="./appDetail.html?id=4080" target="_blank">
-                                        <div class="pic">
-                                            <img src="http://img01.sogoucdn.com/app/a/200869/6d02a7a3304ffd054a19a8df48cd3742.jpg"
-                                            alt="">
-                                        </div>
-                                        <p class="nm txe">
-                                            腾讯动漫+
-                                        </p>
-                                    </a>
-                                    <a class="ce" href="./appDetail.html?id=13212" target="_blank">
-                                        <div class="pic">
-                                            <img src="http://img03.sogoucdn.com/app/a/200869/4e47e9d398d08a2569299c04c603c282.jpg"
-                                            alt="">
-                                        </div>
-                                        <p class="nm txe">
-                                            糖豆广场舞视频大全
-                                        </p>
-                                    </a>
-                                    <a class="ce" href="./appDetail.html?id=4556" target="_blank">
-                                        <div class="pic">
-                                            <img src="http://img01.sogoucdn.com/app/a/200869/424450c3c0e0767647b7ac5371e9f4ce.jpg"
-                                            alt="">
-                                        </div>
-                                        <p class="nm txe">
-                                            暴走表情大全
-                                        </p>
-                                    </a>
-                                    <a class="ce" href="./appDetail.html?id=4890" target="_blank">
-                                        <div class="pic">
-                                            <img src="http://img02.sogoucdn.com/app/a/200869/d1f8cee9d506c8990e9e0c3da448fd5e.jpg"
-                                            alt="">
-                                        </div>
-                                        <p class="nm txe">
-                                            王者荣耀早知道
-                                        </p>
-                                    </a>
-                                    <a class="ce" href="./appDetail.html?id=10600" target="_blank">
-                                        <div class="pic">
-                                            <img src="http://img03.sogoucdn.com/app/a/200869/aa6c20b9f976a0ec3d6100a20071ca5e.jpg"
-                                            alt="">
-                                        </div>
-                                        <p class="nm txe">
-                                            美团生活
-                                        </p>
-                                    </a>
-                                    <a class="ce" href="./appDetail.html?id=4724" target="_blank">
-                                        <div class="pic">
-                                            <img src="http://img03.sogoucdn.com/app/a/200869/7f3ab76c71fa8441f1f899ae10092f35.jpg"
-                                            alt="">
-                                        </div>
-                                        <p class="nm txe">
-                                            涂鸦王国
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mr">
-                            <div class="hot-rank" pbflag="wc_热门小程序">
-                                <div class="tit">
-                                    <h3>
-                                        热门小程序
-                                    </h3>
-                                </div>
-                                <div class="list">
-                                    <a href="./appDetail.html?id=3068" class="cell" target="_blank">
-                                        <div class="cf in">
-                                            <i>
-                                            </i>
-                                            <div class="pic">
-                                                <img src="http://img01.sogoucdn.com/app/a/200869/bcc264798a1317e052c23f376ba19461.jpg"
-                                                alt="">
-                                            </div>
-                                            <div class="info">
-                                                <h4>
-                                                    摩拜单车
-                                                </h4>
-                                                <p>
-                                                    扫码即可骑走的智能共享单车，路边任意合理区域内停车。
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="./appDetail.html?id=10782" class="cell" target="_blank">
-                                        <div class="cf in">
-                                            <i>
-                                            </i>
-                                            <div class="pic">
-                                                <img src="http://img04.sogoucdn.com/app/a/200869/ac9ecf303c0bea6fc72952a672e0f81a.jpg"
-                                                alt="">
-                                            </div>
-                                            <div class="info">
-                                                <h4>
-                                                    携程酒店机票火车票
-                                                </h4>
-                                                <p>
-                                                    携程旅行网小程序，提供酒店、机票、火车票、汽车票、门票预订服务。
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="./appDetail.html?id=4080" class="cell" target="_blank">
-                                        <div class="cf in">
-                                            <i>
-                                            </i>
-                                            <div class="pic">
-                                                <img src="http://img01.sogoucdn.com/app/a/200869/6d02a7a3304ffd054a19a8df48cd3742.jpg"
-                                                alt="">
-                                            </div>
-                                            <div class="info">
-                                                <h4>
-                                                    腾讯动漫+
-                                                </h4>
-                                                <p>
-                                                    腾讯动漫女生版，随时随地轻松阅读的漫画神器，每天都有一大波超高清的好漫更新，萌妹暖男都在这里呦！
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="./appDetail.html?id=11566" class="cell" target="_blank">
-                                        <div class="cf in">
-                                            <i>
-                                                4
-                                            </i>
-                                            <div class="pic">
-                                                <img src="http://img01.sogoucdn.com/app/a/200869/5cce21e1b1ee66ca13971f1428329c78.jpg"
-                                                alt="">
-                                            </div>
-                                            <div class="info">
-                                                <h4>
-                                                    美团外卖+
-                                                </h4>
-                                                <p>
-                                                    美团外卖，目前国内最大的外卖网上订餐平台
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="./appDetail.html?id=12676" class="cell" target="_blank">
-                                        <div class="cf in">
-                                            <i>
-                                                5
-                                            </i>
-                                            <div class="pic">
-                                                <img src="http://img02.sogoucdn.com/app/a/200869/ad75d0a7bc124d0953b789319cf302b2.jpg"
-                                                alt="">
-                                            </div>
-                                            <div class="info">
-                                                <h4>
-                                                    拼多多官方
-                                                </h4>
-                                                <p>
-                                                    拼多多是一个让你和朋友一起拼团购物的小程序。拼多多，拼着买，更便宜。
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="./appDetail.html?id=11820" class="cell" target="_blank">
-                                        <div class="cf in">
-                                            <i>
-                                                6
-                                            </i>
-                                            <div class="pic">
-                                                <img src="http://img01.sogoucdn.com/app/a/200869/c38bfc53c0cd52fc7eb84fa86fdbe58f.jpg"
-                                                alt="">
-                                            </div>
-                                            <div class="info">
-                                                <h4>
-                                                    去哪儿机票火车票酒店
-                                                </h4>
-                                                <p>
-                                                    全球超过1亿注册用户，提供免登录预订酒店、机票、火车票、汽车票、门票服务，极速出票，出行必备。
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="./appDetail.html?id=11564" class="cell" target="_blank">
-                                        <div class="cf in">
-                                            <i>
-                                                7
-                                            </i>
-                                            <div class="pic">
-                                                <img src="http://img01.sogoucdn.com/app/a/200869/2cbd8cfcd4590d956ce640fbfd98428f.jpg"
-                                                alt="">
-                                            </div>
-                                            <div class="info">
-                                                <h4>
-                                                    大众点评
-                                                </h4>
-                                                <p>
-                                                    大众点评致力于提升消费者生活品质,提供值得信赖的商户,点评,优惠信息,覆盖美食,电影,旅游,酒店,KTV,丽人,结婚,亲子,家装等服务
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="./appDetail.html?id=4544" class="cell" target="_blank">
-                                        <div class="cf in">
-                                            <i>
-                                                8
-                                            </i>
-                                            <div class="pic">
-                                                <img src="http://img01.sogoucdn.com/app/a/200869/833876657d184860a9ebe6f76d142804.jpg"
-                                                alt="">
-                                            </div>
-                                            <div class="info">
-                                                <h4>
-                                                    网易漫画
-                                                </h4>
-                                                <p>
-                                                    网易漫画，有态度的看漫画神器，经过国漫日慢免费看！独家签约国内漫画大神。
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="./appDetail.html?id=4684" class="cell" target="_blank">
-                                        <div class="cf in">
-                                            <i>
-                                                9
-                                            </i>
-                                            <div class="pic">
-                                                <img src="http://img02.sogoucdn.com/app/a/200869/7ddb13420d281ec52ae36ae3a75c47a5.jpg"
-                                                alt="">
-                                            </div>
-                                            <div class="info">
-                                                <h4>
-                                                    爱奇艺视频
-                                                </h4>
-                                                <p>
-                                                    爱奇艺视频小程序为用户提供了正版、高清的热门电视剧资源，《射雕英雄传》、《美人为馅3》、《无间道》等海量剧集等你来看！
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="./appDetail.html?id=13212" class="cell" target="_blank">
-                                        <div class="cf in">
-                                            <i>
-                                                10
-                                            </i>
-                                            <div class="pic">
-                                                <img src="http://img03.sogoucdn.com/app/a/200869/4e47e9d398d08a2569299c04c603c282.jpg"
-                                                alt="">
-                                            </div>
-                                            <div class="info">
-                                                <h4>
-                                                    糖豆广场舞视频大全
-                                                </h4>
-                                                <p>
-                                                    糖豆广场舞是一款具有极高知名度的学舞软件，200 条教学视频、数千位舞蹈名师、数百种舞蹈类型，每 2 个舞友中就有 1 个在用糖豆。
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="app-footer" pbflag="wc_底部">
-                    <div class="inner">
-                        <p>
-                            <a rel="noopener noreferrer" href="http://123.sogou.com/about/" target="_blank">
-                                关于我们
-                            </a>
-                            <a rel="noopener noreferrer" href="http://123.sogou.com/about/feedback.html?url=http://123.sogou.com/wxapp/appDetail.html?id=7730"
-                            target="_blank">
-                                意见反馈及投诉
-                            </a>
-                            <a rel="noopener noreferrer" href="http://corp.sogou.com/private.html"
-                            target="_blank">
-                                隐私政策
-                            </a>
-                            <a rel="noopener noreferrer" href="http://www.sogou.com/docs/terms.htm"
-                            target="_blank">
-                                免责声明
-                            </a>
-                            <a rel="noopener noreferrer" href="http://123.sogou.com/" target="_blank">
-                                网址大全
-                            </a>
-                        </p>
-                        <p>
-                            Copyright © 2019 Sogou.com. All Rights Reserved.
-                            <a rel="noopener noreferrer" href="http://www.miibeian.gov.cn" target="_blank">
-                                京ICP证050897号
-                            </a>
-                        </p>
+                        <a href='/xcxlist/101_1_3.html' class=''>
+                            3
+                        </a>
+                        <a href='/xcxlist/101_1_4.html' class=''>
+                            4
+                        </a>
+                        <a href='/xcxlist/101_1_5.html' class=''>
+                            5
+                        </a>
+                        <a href='/xcxlist/101_1_6.html' class=''>
+                            6
+                        </a>
+                        <a href='/xcxlist/101_1_7.html' class=''>
+                            7
+                        </a>
+                        <a href='/xcxlist/101_1_2.html' class='next'>
+                            下一页
+                        </a>
+                        <a href='/xcxlist/101_1_39.html' class='end'>
+                            末页
+                        </a>
+                        <span class='rows'>
+                            共779条记录
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="//upd10.sogoucdn.com/nstatic/js/sa_v1.0.3.js">
-        </script>
-        <script type="text/javascript">
-            function getPageName(e) {
-                var a = {
-                    index: "main",
-                    article: "article",
-                    rank: "top",
-                    search: "search",
-                    appDetail: "detail",
-                    articleDetail: "article_detail"
-                }; - 1 != e.indexOf("?") && (e = e.split("?")[0]);
-                var t = e.split("/"),
-                i = t[t.length - 1].split(".")[0];
-                return a[i] ? a[i] : "main"
-            }
-            var spb_vars = {
-                ptype: "xiaochengxupc",
-                pcode: getPageName(location.href),
-                pstr: "",
-                pfunc: function(e) {},
-                pingback: function() {}
-            };
-            window.addEventListener("hashchange",
-            function() {
-                spb_vars.pcode = getPageName(location.href)
+        <!--foot-->
+        <div class="tj_bot">
+            <div class="W1200">
+                <div class="ewmwrap">
+                    <div class="lis">
+                        <img src="/Public/newzt/images/img-ewm.png" alt="">
+                        <p>
+                            手机客户端
+                        </p>
+                    </div>
+                    <div class="line">
+                    </div>
+                    <div class="lis">
+                        <img src="/Public/newzt/images/gzh.jpg" alt="">
+                        <p>
+                            微信公众号
+                        </p>
+                    </div>
+                </div>
+                <div class="tj-item">
+                    <ul>
+                        <li>
+                            <p>
+                                游戏
+                            </p>
+                        </li>
+                        <li>
+                            <a href="http://game.anruan.com/gnew/" target="_blank">
+                                安卓游戏
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://game.anruan.com/iosnew/" target="_blank">
+                                苹果游戏
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://game.anruan.com/pcnew/" target="_blank">
+                                手游电脑版
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.anruan.com/h5/" target="_blank">
+                                H5游戏
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>
+                                软件
+                            </p>
+                        </li>
+                        <li>
+                            <a href="http://soft.anruan.com/new/" target="_blank">
+                                安卓软件
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://soft.anruan.com/iosnew/" target="_blank">
+                                苹果软件
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://soft.anruan.com/pcnew/" target="_blank">
+                                电脑软件
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.anruan.com/xcx/  " target="_blank">
+                                小程序
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>
+                                专题
+                            </p>
+                        </li>
+                        <li>
+                            <a href="https://www.anruan.com/zt_3_1.html " target="_blank">
+                                软件专题
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.anruan.com/zt_2_1.html " target="_blank">
+                                游戏专题
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.anruan.com/spec_4_1.html" target="_blank">
+                                软件合集
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.anruan.com/spec_2_1.html" target="_blank">
+                                游戏合集
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>
+                                特色
+                            </p>
+                        </li>
+                        <li>
+                            <a href="https://www.anruan.com/libao/" target="_blank">
+                                手游礼包
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.anruan.com/top/" target="_blank">
+                                排行榜
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.anruan.com/news/" target="_blank">
+                                新闻攻略
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.anruan.com/kc/ " target="_blank">
+                                开测
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--foot-->
+        <div class="QZ_bot">
+            <div class="foot W1200">
+                <ul class="link fl">
+                    <li class="fisli">
+                        <a href="https://www.anruan.com/aboutus.html" rel="nofollow" target="_blank">
+                            关于我们
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.anruan.com/cooperate.html" rel="nofollow" target="_blank">
+                            联系我们
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.anruan.com/copyright.html" rel="nofollow" target="_blank">
+                            版权声明
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.anruan.com/addsoft.html" rel="nofollow" target="_blank">
+                            软件发布
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" rel="nofollow" id="jubao">
+                            举报入口
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.anruan.com/ruku.html" target="_blank">
+                            我要上传
+                        </a>
+                    </li>
+                </ul>
+                <div class="Copyright fl">
+                    <p>
+                        版权所有 (C)2019 www.anruan.com All Rights Reserved
+                        <a href="http://www.beian.miit.gov.cn" target="_blank" rel="nofollow">
+                            豫ICP备19035130号-1
+                        </a>
+                    </p>
+                </div>
+                <div class="ico">
+                    <a href="javascript:;" class="ico_1" target="_blank">
+                    </a>
+                    <a href="javascript:;" class="ico_2" target="_blank">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wid_wrap">
+            <div class="win_mengban">
+            </div>
+            <div class="win_box">
+                <div class="title">
+                    举报信息框
+                </div>
+                <ul>
+                    <li>
+                        <span>
+                            <i>
+                                *
+                            </i>
+                            举报网址：
+                        </span>
+                        <input type="text" id="qs_url" value="">
+                    </li>
+                    <li>
+                        <span>
+                            <i>
+                                *
+                            </i>
+                            举报内容：
+                        </span>
+                        <textarea name="" id="qs_cont" value="" cols="30" rows="10" maxlength="200">
+                        </textarea>
+                    </li>
+                    <li>
+                        <span>
+                            <i>
+                                *
+                            </i>
+                            联系方式：
+                        </span>
+                        <input type="text" id="qs_call" value="">
+                    </li>
+                </ul>
+                <div class="btn" id="qs_sub" type="submit">
+                    举报
+                </div>
+            </div>
+        </div>
+        <link rel="stylesheet" href="https://www.anruan.com/Public/style/css/impeach.css">
+        <script>
+            $('#jubao').click(function() {
+                $('.wid_wrap').fadeIn();
+                var url = window.location.href;
+                $("#qs_url").val(url);
+
+            }) $('.win_mengban').click(function() {
+                $('.wid_wrap').fadeOut()
+            })
+
+            $('#qs_sub').click(function() {
+                var qs_url = $('#qs_url').val();
+                var qs_cont = $('#qs_cont').val();
+                var qs_call = $('#qs_call').val();
+                var strRegex = '(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]';
+
+                var re = new RegExp(strRegex);
+                if (qs_url == '') {
+                    alert('请输入举报网址') return false;
+                } else if (!re.test(qs_url)) {
+                    alert("请输入正确的url地址");
+                    return false;
+                } else if (qs_cont == '') {
+                    alert('请输入举报内容') return false;
+                } else if (qs_call == '') {
+                    alert('请输入联系方式') return false;
+                } else {
+                    $.ajax({
+                        url: "/impeach.html",
+                        data: {
+                            qs_url: qs_url,
+                            qs_cont: qs_cont,
+                            qs_call: qs_call
+                        },
+                        type: "get",
+                        dataType: 'json',
+                        success: function(data) {
+                            if (data['code'] == 0) {
+                                alert(data['msg']);
+                                $('.wid_wrap').fadeOut()
+                            } else {
+                                return alert(data['msg']);
+                            }
+                        }
+                    });
+                }
             })
         </script>
-        <script type="text/javascript" src="/wxapp/static/js/appDetail.25a67b65.js">
+        <!--foot End-->
+        <script>
+            var _hmt = _hmt || []; (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?5ab526209b2cdf5c522dbfab9318e64a";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+        <script>
+            (function() {
+                var bp = document.createElement('script');
+                var curProtocol = window.location.protocol.split(':')[0];
+                if (curProtocol === 'https') {
+                    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                } else {
+                    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                }
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(bp, s);
+            })();
+        </script>
+        <!--js-->
+        <script src="/Public/skin/js/cycle.js" type="text/javascript" charset="utf-8">
+        </script>
+        <script src="/Public/skin/js/Slide.js" type="text/javascript" charset="utf-8">
+        </script>
+        <script src="/Public/skin/js/base.js" type="text/javascript" charset="utf-8">
+        </script>
+        <!--fumeiti-->
+        <script type="text/javascript" src="/Public/qiantai/js/er_19759_8353.js">
+        </script>
+        <script src="//msite.baidu.com/sdk/c.js">
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+                "@id": "https://www.anruan.com/xcxlist/101_1_1.html",
+                "upDate": "2018-12-15T08:54:00",
+                "data": {
+                    "WebPage": {
+
+}
+                }
+            }
         </script>
     </body>
 
