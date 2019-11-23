@@ -15,9 +15,9 @@ class Index {
 	// https://www.91ud.com/app/
 	// http://123.sogou.com/wxapp/
 	// https://www.anruan.com/xcx/
-	//
 	// http://www.we123.com/xcx/
 	// https://soft.shouji.com.cn/weixinapp/
+	// 
 	// http://www.mumayi.com/xiaochengxu/
 	// http://www.duba.com/wxapp/search.html?type=tag&keyword=%E5%85%A8%E9%83%A8
 	// http://www.xmtzxm.com/xcx/
