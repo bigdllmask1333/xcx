@@ -49,7 +49,7 @@ class Jisuapp {
 		echo "</pre>";
 	}
 
-	/*获取详情*/
+	/*获取详情 */
 	// http://xcx.com/index.php/index/Jisuapp/getDetail
 	public function getDetail() {
 		$url = 'http://shop.jisuapp.cn/program/605376.html';
