@@ -23,8 +23,7 @@ class Index {
 	// https://www.yqdown.com/xcx/
 	// http://xiao.lieyunwang.com/
 	// http://shop.jisuapp.cn/genre/hot/
-	// 
-	// https://www.hishop.com.cn/xiaocx/daquan.html
+	// https://www.hishop.com.cn/xiaocx/daquan.html   不抓
 	// https://minapp.com/miniapp/
 
 	//基础数据抓取  SEO优化  表单提交审核  资讯
