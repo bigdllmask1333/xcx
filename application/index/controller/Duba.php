@@ -118,36 +118,37 @@ class Duba {
 	/*获取详情*/
 	// http://xcx.com/index.php/index/Mumayi/getDetail
 	public function getDetail() {
-		$url = 'http://www.mumayi.com/xiaochengxu-21163.html';
-		$ql = QueryList::get($url);
+		echo 'no data';
+		// $url = 'http://www.mumayi.com/xiaochengxu-21163.html';
+		// $ql = QueryList::get($url);
 
-		$title = $ql->find('.main960 .w670 .iapp_hd .iappname')->text();
-		$icon = $ql->find('.main960 .w670 .iapp_hd .ibigicon  img')->src;
-		$tags = $ql->find('.main960 .w670 .ibor2 ul li:contains("所属类别："))')->text();
-		$qrcode = $ql->find('.main960 .w670 .ibor2 .erwmH img')->src;
-		$images = $ql->find('.main960 .w670 .ibox img')->attrs('src')->all();
-		$remark = $ql->find('.main960 .w670 .ibox .author p')->text();
-		// $typesurl = $ql->find('.main>div:eq(0) .main-cont-left>div:eq(1) ul>li:eq(0) a')->href;
-		// $typesname = $ql->find('.main>div:eq(0) .main-cont-left>div:eq(1) ul>li:eq(0) a')->text();
-		array_shift($images);  /*去除第一个无效元素*/
-
-
-
+		// $title = $ql->find('.main960 .w670 .iapp_hd .iappname')->text();
+		// $icon = $ql->find('.main960 .w670 .iapp_hd .ibigicon  img')->src;
+		// $tags = $ql->find('.main960 .w670 .ibor2 ul li:contains("所属类别："))')->text();
+		// $qrcode = $ql->find('.main960 .w670 .ibor2 .erwmH img')->src;
+		// $images = $ql->find('.main960 .w670 .ibox img')->attrs('src')->all();
+		// $remark = $ql->find('.main960 .w670 .ibox .author p')->text();
+		// // $typesurl = $ql->find('.main>div:eq(0) .main-cont-left>div:eq(1) ul>li:eq(0) a')->href;
+		// // $typesname = $ql->find('.main>div:eq(0) .main-cont-left>div:eq(1) ul>li:eq(0) a')->text();
+		// array_shift($images);  /*去除第一个无效元素*/
 
 
-		echo "<pre>";
-		print_r($title);
-		echo "<hr>";
-		print_r($qrcode);
-		echo "<hr>";
-		print_r($icon);
-		echo "<hr>";
-		print_r($images);
-		echo "<hr>";
-		print_r($remark);
-		echo "<hr>";
-		print_r($tags);
-		echo "</pre>";
+
+
+
+		// echo "<pre>";
+		// print_r($title);
+		// echo "<hr>";
+		// print_r($qrcode);
+		// echo "<hr>";
+		// print_r($icon);
+		// echo "<hr>";
+		// print_r($images);
+		// echo "<hr>";
+		// print_r($remark);
+		// echo "<hr>";
+		// print_r($tags);
+		// echo "</pre>";
 	}
 
 
