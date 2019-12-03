@@ -46,7 +46,8 @@ git commit -m 'cm'
 git push origin master
 
 
-数据源
+数据源(目前第一步完成，所有的网址都爬到了数据，规则都写好了)
+接下来第二步就是分页抓取 入 库
 ================
 
 /*抓取来源  小程序，小游戏*/
@@ -82,8 +83,6 @@ https://www.yqdown.com/xcx/
 http://xiao.lieyunwang.com/
 
 http://shop.jisuapp.cn/genre/hot/
-
-https://www.hishop.com.cn/xiaocx/daquan.html
 
 https://minapp.com/miniapp/
 
